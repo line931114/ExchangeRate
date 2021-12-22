@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class="exchange-box">
+		<div class="dropdown">
+			<button class="dropbtn" id="from-button">USD</button>
+			<div class="dropdown-content" id="from-currency-list">
+				<a href="#">USD</a> <a href="#">KRW</a> <a href="#">VND</a>
+			</div>
+		</div>
+		<div class="input-area">
+			<input type="number" id="fromMoney" onkeyup='fromMoeney()'
+				placeholder="금액을 입력하세요">
+			<div id='money'>기본금액</div>
+		</div>
+	</div>
+	<h1>=</h1>
+	<div class="exchange-box">
+		<div class="dropdown">
+			<button class="dropbtn" id="to-button">USD</button>
+			<div class="dropdown-content" id="to-currency-list">
+				<a href="#">USD</a> <a href="#">KRW</a> <a href="#">VND</a>
+			</div>
+		</div>
+		<div class="input-area">
+			<div id='result'>금액을 입력해주세요.</div>
+			<!-- <input type="number" id="to-money" value='result'> -->
+			<div id='money1'>환전금액</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+
+
+</body>
+</html>
